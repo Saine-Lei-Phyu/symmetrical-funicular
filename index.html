@@ -1,0 +1,204 @@
+<html>
+    <head>
+    <style>
+        a{
+    color: #774936;
+    text-decoration: none;
+}
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family:'Segoe UI';
+} 
+.about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    padding: 10px;
+    background-color: #d4a373;
+}
+.header{
+    background-color: #ffd6a5;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.reservation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    padding: 20px;
+    background-color: #d4a373;
+}
+.reservation-text{
+    font-weight: bold;
+}
+input{
+    height: 30px;
+    border-radius: 5px;
+    border-style: none;
+}
+button{
+    height: 30px;
+    background-color: #F9E2AF;
+    transition-duration: 0.4s;
+    border-style: none;
+    width: 80px;
+    
+}
+button:hover{
+    background-color: #A9907E;
+    cursor: pointer;
+    
+}
+.welcomemessage{
+    background-color: #d4a373;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    transition-duration: 0.4s;
+}
+.welcomemessage:hover{
+    letter-spacing: 10px;
+    color:#023047;
+}
+.container{
+    width: 100%;
+}
+.coupons{
+    background-color: #ffd6a5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    transition-duration: 0.4s;
+    
+}
+.coupons-image{
+    width: 200px;
+    height: 150px;
+    border: 2px solid;
+    border-color: darksalmon;
+    border-radius: 5px;
+    padding: 5px;
+}
+.review-input{
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: #e7cf9c5a;
+}
+.review{
+    height: 450px;
+    background-color: #F9E2AF;
+}
+select{
+    width: 120px;
+    height: 30px;
+    background-color: #F9E2AF;
+    border: 2px solid black;
+}
+textarea{
+    background-color: #F9E2AF;
+    border: 2px solid black;
+}
+.submitreview{
+    background-color: #d4a373;
+}
+.review-head{
+    font-size: 30px;
+    font-weight: bold;
+}
+footer{
+    background-color: rgb(222, 142, 142);
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.review{
+    padding: 15px;
+}
+.contactus{
+    margin-left: 5px;
+}
+.contactus-img{
+    width: auto;
+    height: 150px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+    </style>
+    </head>
+    <body>
+        <div class="header">
+            <a href="about.html">About📱</a>
+            <a href="index.html">Home🏠</a>
+            <a href="menu.html">Menu📄</a>
+        </div>
+        <div class="Welcomemessage">
+            <h1>Welcome to <span id="restaurant-name">PVZ Restaurant</span></h1>
+        </div>
+        <div class="about" >
+            <video width="300px" height="300px" controls>
+                <source src="PVZ.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="coupons">
+            <img src="special offer.avif" alt="" class="coupons-image">
+            <div class="coupons-text">
+            <h1>SPECIAL OFFERS ONLY FOR THIS MONTH!!!!</h1>
+            <p>Get 15% discount when you use this code <strong>PVZ-2023-IS-THE-BEST</strong>! 🍽️ in any of our branches. </p></div>
+        </div>
+        <div class="review">
+            <span class="review-head">Review:</span>  <br>
+            Your Name:  <br><input type="text" name="name" size="30" class="review-input"> <br>
+            Your Email: <br> <input type="email" name="email" size="30" class="review-input"><br>
+            How did you hear about us? <br>
+            <select>      
+                <option value="Social Media">Social Media </option>      
+                <option value="Television">Television</option>      
+                <option value="Radio">Radio</option>    
+                <option value="Search Engine">Search Engine</option>   
+                <option value="newspaper">Newspaper</option> 
+                <option value="other">Other</option>
+                </select> <br>
+                Would you visit again? <br>      
+                <input type="radio" name="rating" value="yes" /> Yes 
+                <input type="radio" name="rating" value="no" /> No
+                <input type="radio" name="rating" value="maybe" /> Maybe <br>
+                Comments: <br>
+                <textarea rows="4" cols="30" class="comments"></textarea> <br>
+                <input type="checkbox" name="signmeup" checked="checked" />      
+                Sign me up for email updates <br>
+                <button class="submitreview">Submit</button>   
+        </div>
+        <div class="reservation">
+            <h1 class="reservation-text">MAKE A RESERVATION</h1> <br>
+            <div class="reservation-form"> 
+            Name: <br><input type="text"><br>
+            Phone Number: <br><input type="number"><br>
+            Number of people: <br><input type="number" max="30" min="1"><br>
+            Date and Time: <br><input type="datetime-local"><br> <br>
+            <center><button>Submit</button></center></div>
+        </div>
+        <footer>
+            <div class="contactus">
+                <h1>Contact Us</h1>
+            <p>Email: info.pvzrestaurant@gmail.com <br>
+                Instagram : <a target="_blank" href="https://www.instagram.com/">PVZ Restaurant</a><br>
+                Twitter : <a target="_blank" href="https://twitter.com/?lang=nl">PVZ Restaurant</a>  <br>
+                Facebook :<a target="_blank" href="https://www.facebook.com/">PVZ Restaurant</a>
+            </p>
+            </div>
+            <div class="contactus-img-div">
+                <img src="restaurant design 1.jpg" alt="" class="contactus-img">
+                <img src="restaurant design 2.jpg" alt=""  class="contactus-img"></div>
+                
+            
+        </footer>
+    </body>
+</html>
